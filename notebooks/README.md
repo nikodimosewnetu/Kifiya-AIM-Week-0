@@ -1,6 +1,3 @@
-# Kifiya-AIM-Week-0
-
-
 # Data Analysis for Solar Energy and Weather Data
 
 ## Project Overview
@@ -23,9 +20,10 @@ This project involves the analysis of solar energy and weather data from three d
 
 - **Identify Missing Values**: Check for missing values in the dataset.
 - **Handle Missing Values**: Drop columns that are entirely null (e.g., 'Comments') and fill missing values in numeric columns with the median.
+- **Handle Anomalies**: Remove rows with negative values in columns where only positive values are expected.
 - **Drop Unnecessary Columns**: Drop columns that are not useful for analysis.
 
-## Data Used
+## Data Sources
 
 The data used in this project comes from three different countries. Each dataset includes various columns such as:
 - **Timestamp**: The date and time of the observation.
@@ -46,15 +44,12 @@ The data used in this project comes from three different countries. Each dataset
 1. **Clone the Repository**:
    ```sh
    git clone https://github.com/teddyhabtamu/Kifiya-AIM-Week-0.git
-
 2. **Navigate to the Project Directory**:
    ```sh
    cd Kifiya-AIM-Week-0
-
 3. **Install Dependancies**: 
    ```sh
    pip install pandas numpy matplotlib seaborn scipy
-   
 4. **Open the Jupyter notebooks and run the cells**
 
 
@@ -68,10 +63,3 @@ The analysis provides insights into the relationships between various weather an
 
 ## Conclusion
 This project demonstrates the importance of data cleaning and exploratory data analysis in understanding complex datasets. The visualizations and statistical analyses provide valuable insights into the behavior of solar energy and weather variables across different countries.
-
-
-## License 
-This project is licensed under the MIT License 
-
-## Acknowledgements
-- All 10Acadamy team (Kifiya) for the support and guidance
